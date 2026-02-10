@@ -500,7 +500,7 @@ footer {
     animation: slideUp .8s ease forwards;
     overflow: hidden;
 }
-.home-section > .image-case {
+aside > .image-case {
     border: 2px solid #ffffff;
     padding: 5px;
     display: flex;
@@ -603,6 +603,7 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
+
 
 
 
