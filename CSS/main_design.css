@@ -321,9 +321,9 @@ mark.hov:hover  {
     animation: slideUp .8s ease forwards;
 }
 .wrapper2 {
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 .ref {
     font-size: 1.5rem;
@@ -592,5 +592,6 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
+
 
 
