@@ -264,6 +264,23 @@ nav ul li a:active {
     color: white;
     transition: all 0.2s ease;
 }
+.blog-header ul {
+    list-style-type: none;
+    font-size: 2rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+.blog-header ul li {
+    border-bottom: 3px solid white;
+}
+.blog-header ul li a {
+    color: white;
+    display: block;
+    padding: 0.5px 16px;
+    text-decoration: none;
+}
 #blackwallpaper {
     background-image: url('../BLOG STORIES/IMAGES/blackwallpaper_1.jpg');
     background-size: cover;
@@ -611,6 +628,7 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
+
 
 
 
