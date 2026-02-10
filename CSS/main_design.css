@@ -320,6 +320,11 @@ mark.hov:hover  {
     padding: 40px;
     animation: slideUp .8s ease forwards;
 }
+.wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+}
 .ref {
     font-size: 1.5rem;
     line-height: 1rem;
@@ -328,7 +333,7 @@ mark.hov:hover  {
     font-style: italic;
     margin-top: 10px;
     font-family: 'Vremena Grotesk', sans-serif;
-    animation: expand .8s ease forwards .5s;
+    animation: expand .8s ease forwards;
 }
 footer {
     background-color: #170e00;
@@ -585,4 +590,5 @@ blockquote {
     font-size: 1.5rem;
     border-left: 4px solid #3E122B;
     border-right: 4px solid #3E122B;
+
 }
