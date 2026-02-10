@@ -390,7 +390,8 @@ footer {
     display: flex;
 }
 .home-section {
-    color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
     font-family: 'Bebas Neue', sans-serif;
     padding: 0 50px 0 0;
     margin: 20px;
@@ -503,13 +504,13 @@ footer {
 .image-case3 {
     border: 2px solid #ffffff;
     padding: 10px;
-    margin: 2rem auto; /* Centering it */
+    margin: 2rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-width: 400px; /* Limits the width of the frame */
-    border-radius: 8px; /* Optional: rounds the corners */
+    max-width: 400px;
+    border-radius: 8px;
     animation: slideUp .8s ease forwards;
 }
 .image-case3 img {
@@ -610,6 +611,7 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
+
 
 
 
