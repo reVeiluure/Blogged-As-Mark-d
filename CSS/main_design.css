@@ -264,7 +264,7 @@ nav ul li a:active {
     color: white;
     transition: all 0.2s ease;
 }
-.blog-header ul {
+.header-wrapper ul {
     list-style-type: none;
     font-size: 2rem;
     display: flex;
@@ -272,10 +272,10 @@ nav ul li a:active {
     padding: 0;
     flex: 1;
 }
-.blog-header ul li {
+.header-wrapper ul li {
     border-bottom: 3px solid white;
 }
-.blog-header ul li a {
+.header-wrapper ul li a {
     color: white;
     display: block;
     padding: 0.5px 16px;
@@ -628,6 +628,7 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
+
 
 
 
