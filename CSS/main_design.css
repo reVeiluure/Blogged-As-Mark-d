@@ -500,16 +500,23 @@ footer {
     animation: slideUp .8s ease forwards;
     overflow: hidden;
 }
-aside > .image-case {
+.image-case3 {
     border: 2px solid #ffffff;
-    padding: 5px;
+    padding: 10px;
+    margin: 2rem auto; /* Centering it */
     display: flex;
-    margin: 2rem 5rem;
-    flex-direction: column;
-    animation: slideUp .8s ease forwards;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    height: auto;
+    max-width: 400px; /* Limits the width of the frame */
+    border-radius: 8px; /* Optional: rounds the corners */
+    animation: slideUp .8s ease forwards;
+}
+.image-case3 img {
     width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 .image-case2 {
     border: 2px solid #ffffff;
@@ -603,6 +610,7 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
+
 
 
 
