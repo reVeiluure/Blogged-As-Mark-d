@@ -4,11 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blogged as Mark'd | HOME</title>
         <link rel="stylesheet" href="CSS/main_design.css">
+        <link rel="stylesheet" href="CSS/home_design.css">
     </head>
-    <body id="blackwallpaper">
+    <body class="home">
         <header class="blog-header">
             <div>
-                <nav>
+                <nav class="nav-header">
                     <input type="checkbox" id="menu-toggle">
                     <label for="menu-toggle" class="hamburger">&#9776;</label>
                     <ul class="nav-menu">
@@ -26,6 +27,13 @@
                                 <li><a href="BLOG STORIES/blogstory3.html" target="_self">Blog Part 3</a></li>
                             </ul>
                         </li>
+                    <li class="dropdown">
+                        <a href="#photo-gallery_dd">Photo Gallery</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="gallery_self.html" target="_self">Myself</a></li>
+                                <li><a href="gallery_arts.html" target="_self">My Arts</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 <h4 class="logo"><mark>Blogged as Mark'd</mark></h4>
                 </nav>
@@ -40,9 +48,16 @@
                 </aside>
                 <section>
                     <div>
-                        <h1 style="text-align-center;">
-                            <mark style="background-color: transparent; color: white; font-size:smaller;">HELLO!</mark><br>
-                            <mark style="font-size:smaller;">MARK ANDREW MATEO</mark>
+                        <h1 style="text-align:center;">
+                            <div class="intro-text">
+                                <h1>
+                                    <span class="small">HELLO!</span><br>
+                                    MARK ANDREW MATEO
+                                </h1>
+                            </div>
+                            <div class="description">
+                                <p>He is a writer under the <a href="https://www.tumblr.com/blog/amidstoftheabyss" target="_blank" style="color: black; text-decoration: underline;">ReverieVeil</a> pseudonym; an avant-garde connoisseur artist, gamer, music and film nerd, and a post-left anarchist. He is also a hobbyist who does photography, digital arts, and indie / experimental / punk / slowcore music.</p>
+                            </div>
                         </h1>
                     </div>
                 </section>
@@ -58,8 +73,8 @@
                 <section>
                     <div>
                         <h1>
-                            <mark style="background-color: transparent; color: white; font-size:smaller;">Live as you are. </mark><br>
-                            <mark style="font-size:smaller;">Become the love.</mark>
+                            <mark style="background-color: transparent; font-size:smaller; text-decoration: double;">Live as you are. </mark><br>
+                            <mark style="font-size:smaller; box-shadow: 12px 12px 0 black;">Become the love.</mark>
                         </h1>
                     </div>
                 </section>
@@ -112,18 +127,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

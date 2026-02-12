@@ -220,7 +220,7 @@ header h4 mark {
     border: 3px black;
     border-style: groove;
 }
-nav {
+.nav-header {
     background-color: white;
     border-bottom: 2px solid black;
     padding: 20px 50px;
@@ -309,13 +309,49 @@ nav ul li a:active {
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 .header-wrapper {
-    max-width: 1100px; 
-    margin: 0 auto; 
+    max-width: 1100px;
+    margin: 0 auto;
     width: 95%;
-    padding: 0 10px;
+    padding: 5px 5px;
     border-left: 2px solid white;
     border-right: 2px solid white;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-wrapper2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
+    line-height: 0.5px;
+    padding: 1px 1px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.header-wrapper > ul {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+.header-wrapper > ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+.header-wrapper > ul li a {
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
 }
 mark.quote {
     background-color: black;
@@ -338,7 +374,7 @@ mark.hov:hover  {
     animation: slideUp .8s ease forwards;
 }
 .wrapper2 {
-    max-width: 1080px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -350,7 +386,6 @@ mark.hov:hover  {
     font-style: italic;
     margin-top: 10px;
     font-family: 'Vremena Grotesk', sans-serif;
-    animation: expand .8s ease forwards;
 }
 footer {
     background-color: #170e00;
@@ -406,93 +441,6 @@ footer {
     color: #FFD700;
     display: flex;
 }
-.home-section {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-family: 'Bebas Neue', sans-serif;
-    padding: 0 50px 0 0;
-    margin: 20px;
-    flex-direction: row-reverse;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    animation: slideUp .8s ease forwards;
-}
-.home-section h1 {
-    font-size: 64px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.home-section h2 {
-    font-size: 56px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.home-section h3 {
-    font-size: 48px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.home-section2 {
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    padding: 100px;
-    margin: 50px;
-    animation: slideUp .8s ease forwards;
-}
-.home-section2 h1 {
-    font-size: 64px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.home-section2 h2 {
-    font-size: 56px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.home-section2 h3 {
-    font-size: 48px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
-    animation: slideUp 1.5s ease-in-out forwards;
-}
-.blog-card {
-    display: block;
-    border: 3px solid black;
-    padding: 25px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    transition: background-color .25s ease, color .25s ease, transform .2s ease;
-}
-.blog-card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 48px;
-    padding: 0 10px 0 0;
-    margin: 0 0 10px;
-}
-.blog-card a {
-    color: inherit;
-    text-decoration: none;
-}
-.blog-card p {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 14px;
-    margin: 0;
-    line-height: 1.6;
-    text-indent: 0;
-}
-.blog-card:hover {
-    background-color: black;
-    color: white;
-    transform: translateY(-3px);
-}
-.blog-card:hover h3, .blog-card:hover h3 > a, .blog-card:hover p {
-    color: white;
-}
-.blog-card:hover a {
-    text-decoration: underline;
-}
 .separator {
     border-top: 5px solid #3E122B;
     width: 100%;
@@ -502,7 +450,7 @@ footer {
     display: block;
 }
 .separator2 {
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #3E122B;
     width: 100%;
     margin: 20px 0;
     padding: 0;
@@ -519,7 +467,7 @@ footer {
     overflow: hidden;
 }
 .image-case3 {
-    border: 2px solid #ffffff;
+    border: 2px solid #3E122B;
     padding: 10px;
     margin: 2rem auto;
     display: flex;
@@ -528,6 +476,7 @@ footer {
     overflow: hidden;
     max-width: 400px;
     border-radius: 8px;
+    transition: all 0.5s ease;
     animation: slideUp .8s ease forwards;
 }
 .image-case3 img {
@@ -537,12 +486,13 @@ footer {
     object-fit: cover;
 }
 .image-case2 {
-    border: 2px solid #ffffff;
+    border: 2px solid #3E122B;
     padding: 5px;
     display: flex;
     margin: 2rem 5rem;
     flex-direction: column;
     animation: slideUp .8s ease forwards;
+    transition: all 0.5s ease;
     overflow: hidden;
     width: 100%;
     max-width: 640px;
@@ -554,6 +504,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin: 40px 0;
     animation: slideUp 1.5s ease-in-out forwards;
+    transition: all 0.5s ease;
 }
 .image-grid > .image-case img {
     width: 100%;
@@ -584,7 +535,7 @@ img {
     line-height: -1rem;
     width: 100%;
     margin: 0;
-    animation: slideUp .8s ease forwards;
+    transition: all 0.5s ease;
 }
 h2 {
     font-family: 'Bebas Neue', sans-serif;
@@ -597,6 +548,11 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 200px;
+}
+body.home {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 50px;
 }
 h4 {
     font-family: 'Black Writing', sans-serif;
@@ -614,7 +570,6 @@ p {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    animation: slideUp .8s ease forwards;
 }
 q {
     font-weight: bold;
@@ -628,15 +583,3 @@ blockquote {
     border-right: 4px solid #3E122B;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
